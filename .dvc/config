@@ -1,0 +1,5 @@
+[core]
+    remote = myblogstorage1
+['remote "myblogstorage1"']
+    url = azure://dvcstorage/dvcdemo
+    account_name = myblogstorage1

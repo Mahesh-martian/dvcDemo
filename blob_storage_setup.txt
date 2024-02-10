@@ -1,0 +1,9 @@
+                          storege account name = myblogstorage1
+dvc remote modify --local myblogstorage1 account_name myblogstorage1
+                          container name = dvcstorage 
+dvc remote add -d myblogstorage1 azure://dvcstorage/dvcdemo
+
+dvc remote modify myblogstorage1 account_name myblogstorage1
+
+maku sure adding updated sas token generate if getting error 
+dvc remote modify --local myblogstorage1 sas_token "sp=r&st=2024-02-10T11:39:42Z&se=2024-02-10T19:39:42Z&spr=https&sv=2022-11-02&sr=c&sig=nqUE%2FuGMeEHKN8CInO8qTx7uJ6PImhozJo1tv13ajN8%3D"
